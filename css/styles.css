@@ -1,21 +1,20 @@
-html{
- height:100%;
- min-height:100%;
- }
+html {
+  height: 100%;
+  min-height: 100%;
+}
 
 body {
   /*background: #F9FDFF;*/
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
   margin: 0;
-  color: #F9FDFF;
+  color: #f9fdff;
   height: 100%;
-  min-height:100%;
+  min-height: 100%;
   background-color: #465863;
-  background: url("../images/testv2.jpg") no-repeat center center fixed;
   -webkit-background-size: cover; /* For WebKit*/
-  -moz-background-size: cover;    /* Mozilla*/
-  -o-background-size: cover;      /* Opera*/
-  background-size: cover;         /* Generic*/
+  -moz-background-size: cover; /* Mozilla*/
+  -o-background-size: cover; /* Opera*/
+  background-size: cover; /* Generic*/
   background-attachment: fixed;
 }
 
@@ -27,26 +26,26 @@ body {
 #title {
   font-weight: 700;
   z-index: 3;
-  text-shadow: 1px 2px 3px rgba(0,0,0,0.5);
-  cursor:default;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+  cursor: default;
 }
 
 #role {
-  font-family: 'Assistant', sans-serif;
+  font-family: "Assistant", sans-serif;
   font-weight: 100;
   font-size: 2em;
   margin: 0;
 }
 
 .quick-pitch {
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
   font-weight: 100;
   font-size: 2em;
 }
 
 .divider {
-  border-top:  #F9FDFF 2px solid;
-  border-bottom: #F9FDFF 2px solid;
+  border-top: #f9fdff 2px solid;
+  border-bottom: #f9fdff 2px solid;
 }
 
 .center-stage {
@@ -60,7 +59,7 @@ body {
 }
 
 .social-link-label {
-  font-family: 'Assistant', sans-serif;
+  font-family: "Assistant", sans-serif;
 }
 
 a {
@@ -75,7 +74,7 @@ a::before {
   top: 100%;
   left: 50%;
   color: transparent;
-  content: '•';
+  content: "â€¢";
   text-shadow: 0 0 transparent;
   font-size: 1em;
   -webkit-transition: text-shadow 330ms, color 330ms ease-out;
@@ -83,26 +82,25 @@ a::before {
   transition: text-shadow 330ms, color 330ms ease-out;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
-  transform: translateX(-50%);
   pointer-events: none;
 }
 
 a:hover::before,
 a:focus::before {
-  color: #F9FDFF;
-  text-shadow: 10px 0 #F9FDFF, -10px 0 #F9FDFF;
+  color: #f9fdff;
+  text-shadow: 10px 0 #f9fdff, -10px 0 #f9fdff;
 }
 
 a:hover,
 a:focus {
-  color: #F9FDFF;
+  color: #f9fdff;
 }
 
 .social-list a {
   position: relative;
   text-decoration: none;
   margin: 20px;
-  color: #F9FDFF;
+  color: #f9fdff;
 }
 
 .social-list {
@@ -134,11 +132,11 @@ a:focus {
   }
 
   .side-edge {
-    border-left: #F9FDFF 5px solid;
+    border-left: #f9fdff 5px solid;
   }
   .social-list a {
     display: inline-block;
-    color: #F9FDFF;
+    color: #f9fdff;
     margin: 20px;
   }
 
@@ -151,10 +149,6 @@ a:focus {
   .social-list {
     position: fixed;
     text-align: center;
-    /*width: 95%;
-    bottom: 50px;
-    left: 30px;
-    transform: translateX(-50%);*/
     bottom: 10px;
     left: 25%;
     width: 50%;
@@ -162,9 +156,7 @@ a:focus {
 }
 
 /* -- Tablet -- */
-@media only screen
-and (min-width: 768px)
-and (orientation: portrait) {
+@media only screen and (min-width: 768px) and (orientation: portrait) {
   #title {
     font-size: 7rem;
   }
@@ -183,16 +175,6 @@ and (orientation: portrait) {
   .divider {
     border: none !important;
   }
-
-  /*.center-stage {
-    position: absolute;
-    text-align: center;
-    margin: 0;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80vw;
-  }*/
 
   .social-link i {
     font-size: 5rem;
@@ -221,17 +203,14 @@ and (orientation: portrait) {
 }
 
 /* -- Mobile -- */
-@media only screen
-and (max-width: 767px)
-and (orientation: portrait) {
-
+@media only screen and (max-width: 767px) and (orientation: portrait) {
   #title {
     font-size: 3em !important;
   }
 
   #role {
     font-size: 2em !important;
-    margin-bottom: 20px
+    margin-bottom: 20px;
   }
 
   .quick-pitch {
@@ -241,8 +220,8 @@ and (orientation: portrait) {
   }
 
   .divider {
-    border-top:  #F9FDFF 2px solid;
-    border-bottom: #F9FDFF 2px solid;
+    border-top: #f9fdff 2px solid;
+    border-bottom: #f9fdff 2px solid;
   }
 
   .center-stage {
@@ -254,7 +233,7 @@ and (orientation: portrait) {
   }
 
   .social-link i {
-    font-size: 2em  !important;
+    font-size: 2em !important;
   }
 
   .social-list a {
@@ -269,7 +248,6 @@ and (orientation: portrait) {
     bottom: 15px;
     left: 20px;
     margin: 0;
-    /*transform: translate(-50%, -50%);*/
   }
 
   .social-link-label {
@@ -279,11 +257,9 @@ and (orientation: portrait) {
   a::before {
     display: none;
   }
-
 }
 
 @media (min-width: 320px) and (max-width: 415px) {
-
   #title {
     font-size: 12rem;
   }
