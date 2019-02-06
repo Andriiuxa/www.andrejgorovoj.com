@@ -86,7 +86,7 @@ a::before {
   top: 100%;
   left: 50%;
   color: transparent;
-  content: "â€¢";
+  content: "...";
   text-shadow: 0 0 transparent;
   font-size: 1em;
   -webkit-transition: text-shadow 330ms, color 330ms ease-out;
